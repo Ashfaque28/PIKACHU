@@ -1,11 +1,21 @@
 #include <stdio.h>
-
-void main() 
+int main() 
 {
-    printf("Student Details:\n\n");
-    printf("Name      :\t ASHFAQUE SAYYED\n");
-    printf("Age       :\t 19 YEARS OLD\n");
-    printf("Class     :\t FE\n");
-    printf("Division  :\t ECS E1\n");
-    printf("UIN       :\t 241S005");
+    int physics, chemistry, math, average;
+
+    printf("Enter Physics marks: ");
+    scanf("%d", &physics);
+
+    printf("Enter Chemistry marks: ");
+    scanf("%d", &chemistry);
+
+    printf("Enter Mathematics marks: ");
+    scanf("%d", &math);
+
+    average = (physics + chemistry + math) / 3;
+
+    printf("Average Marks: %d\n", average);
+    (average >= 50) ? printf("Eligible for admission.\n") : printf("Not eligible for admission.\n");
+
+    return 0;
 }
